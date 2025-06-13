@@ -16,6 +16,6 @@ export const fetchProviderById = (id) => {
       } else {
         reject(new Error("Provider not found"));
       }
-    }, 500);
+    }, 1000);
   });
 };
