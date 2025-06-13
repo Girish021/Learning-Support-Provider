@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { fetchProviderById } from "../Services/api.js";
 import RatingStars from "../Component/RatingStars.jsx";
-//import RatingStars from "../Component/RatingStars.jsx";
 
-const ProviderPage = () => {
+
+const ProviderDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [provider, setProvider] = useState(null);
@@ -148,4 +148,4 @@ const ProviderPage = () => {
   );
 };
 
-export default ProviderPage;
+export default ProviderDetail;
